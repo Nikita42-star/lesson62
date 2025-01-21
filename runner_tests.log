@@ -1,0 +1,21 @@
+2025-01-21 11:44:08,126 | INFO | "test_challenge" выполнен успешно
+2025-01-21 11:44:08,127 | WARNING | Неверный тип данных для объекта Runner
+Имя может быть только строкой, передано int
+2025-01-21 11:44:08,128 | WARNING | Traceback (most recent call last):
+  File "C:\Users\Galeev_NS\PycharmProjects\lessons\tests_12_4.py", line 84, in test_run
+    runner = Runner(2)
+             ^^^^^^^^^
+  File "C:\Users\Galeev_NS\PycharmProjects\lessons\tests_12_4.py", line 16, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+
+2025-01-21 11:44:08,128 | WARNING | Неверная скорость для Runner
+Скорость не может быть отрицательной, сейчас -5
+2025-01-21 11:44:08,134 | WARNING | Traceback (most recent call last):
+  File "C:\Users\Galeev_NS\PycharmProjects\lessons\tests_12_4.py", line 73, in test_walk
+    runner = Runner("Вася", -5)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Galeev_NS\PycharmProjects\lessons\tests_12_4.py", line 21, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
+
